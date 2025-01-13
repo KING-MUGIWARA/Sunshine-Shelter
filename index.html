@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Shelter</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sunshine Shelter</h1>
+        <p>A Loving Home for Orphaned Children</p>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="carousel">
+            <img id="carousel-image" src="image1.jpeg" alt="Sunshine Shelter 1">
+        </div>
+    </section>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Sunshine Shelter provides a loving environment for orphaned children, ensuring their physical, emotional, and educational needs are met. Join us in making a difference!</p>
+    </section>
+
+    <section id="about">
+      <h2>About the Fundraiser</h2>
+      
+      <p><b>The Situation</b></p>
+      <p>At Sunshine Shelter, countless children face a future that seems uncertain, abandoned without the love and security they deserve. Many of these children have suffered unimaginable losses – from the absence of a family to the trauma of living on the streets. We are here to change that. Our mission is to give these children not just shelter, but a chance to thrive, dream, and become the leaders of tomorrow. But we need your help to make this possible.</p>
+  
+      <p><b>How the Funds Will Be Used</b></p>
+      <ul>
+          <li><b>Safe Housing:</b> Providing a warm, safe, and nurturing home for children who have nowhere else to go. Your donation will help fund the creation of homes where these children can feel protected, loved, and cared for. We aim to provide a stable environment where children can heal and rebuild their lives with dignity.</li>
+          <li><b>Education and Skills Development:</b> Ensuring every child has access to quality education, extracurricular activities, and life skills training. Your contributions will go towards educational programs, books, tutoring, and digital tools to help them excel academically. These programs will empower them to break the cycle of poverty and reach for their dreams.</li>
+          <li><b>Healthcare and Well-Being:</b> Providing essential medical care, therapy, and mental health services. Donations will cover medical expenses, psychological counseling, and specialized therapy sessions to help children recover from the emotional trauma they’ve experienced. It’s more than just care; it’s about healing their hearts and minds so they can grow strong and confident.</li>
+          <li><b>Food, Clothing, and Basic Needs:</b> Supplying nutritious meals, clothing, and hygiene essentials to every child. With your support, we can provide not only basic necessities but also ensure that each child feels valued and cared for every single day. Your donation will ensure that no child goes without the things they need to feel secure and loved.</li>
+          <li><b>Community and Belonging:</b> Fostering a sense of community and support. Donations will help fund programs that promote social skills, friendship, and belonging. We will create environments where children can form lasting relationships with their peers and mentors, gaining the emotional support they need to succeed.</li>
+      </ul>
+  
+      <p><b>A Personal Story</b></p>
+      <p>Meet Aiden, a 9-year-old boy who arrived at Sunshine Shelter after being abandoned by his parents. He had lost all hope of ever having a family again, but after being welcomed into our shelter, Aiden is now thriving. With access to therapy, education, and love, Aiden has gone from being withdrawn and anxious to excelling in his studies and showing a bright, hopeful smile every day. His journey of healing is a testament to the power of a second chance, and with your help, we can give more children like Aiden the opportunity to thrive.</p>
+  
+      <p>Together, we can change their lives. Thank you for your generosity and support!</p>
+  </section>
+  
+
+    <section id="donate">
+        <h2>Donate Now</h2>
+        <p>Your donation will help us provide essential resources and support to our children. Click below to donate:</p>
+        <button id="donate-button">Donate</button>
+    </section>
+
+    <section id="progress">
+        <h2>Progress Towards Our Goal</h2>
+        <p>Our target is 10,000,000 NGN:</p>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">0 NGN of 10,000,000 NGN raised</p>
+    </section>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Select Payment Method</h2>
+            <button id="paystack-button">Pay with Paystack</button>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="business" value="kingmugiwara1610@gmail.com">
+                <input type="hidden" name="item_name" value="Sunshine Shelter Donation">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="submit" value="Pay with PayPal">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sunshine Shelter. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
