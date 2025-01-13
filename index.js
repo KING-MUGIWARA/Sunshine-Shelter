@@ -20,7 +20,7 @@ document.getElementById('paystack-button').addEventListener('click', () => {
     const donationAmount = prompt('Enter the amount you wish to donate in NGN:');
     if (donationAmount && !isNaN(donationAmount) && donationAmount > 0) {
         const paymentParams = {
-            email: 'abdulmaliksuleiman100@gmail.com',
+            email: 'kingmugiwara1610@gmail.com',
             amount: donationAmount * 100,
             currency: "NGN",
             callback: function () {
@@ -34,7 +34,7 @@ document.getElementById('paystack-button').addEventListener('click', () => {
         };
 
         PaystackPop.setup({
-            key: 'pk_test_717c31979890e580a086b33e5ec399b938a71e54',
+            key: 'pk_live_b435df179c609a1ec3e9801682822b0d0a2668e4',
             ...paymentParams
         }).openIframe();
     } else {
